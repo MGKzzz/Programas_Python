@@ -1,0 +1,9 @@
+import pygame
+pygame.mixer.init()
+pygame.mixer.music.load('lonelyroad.mp3')
+p=str(input('Você gosta do MGK?: '))
+if p=='sim':
+    print('Você tem bom gosto amigo!!! aproveite...')
+    pygame.mixer.music.play()
+    input()
+else:print('VAI TOMAR NO SEU CU ENTÃO')
