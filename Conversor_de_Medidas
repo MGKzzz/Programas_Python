@@ -1,0 +1,4 @@
+m=float(input('Digite a quantidade em metros: '))
+print(f'KM={m*0.001:.4f}')
+print(f'CM={m*100:.4f}')
+print(f'MM={m*1000:.4f}')
