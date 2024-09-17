@@ -1,0 +1,6 @@
+import img2pdf
+with open("Seu_arquivo_PDF", "rb") as image:
+    pdf_bytes=img2pdf.convert(image.read())
+    with open("Seu_arquivo_PDF","wb") as pdf:
+        pdf.write((pdf_bytes))
+print('IMAGEM CONVERTIDA PARA PDF COM SUCESSO!!!')
