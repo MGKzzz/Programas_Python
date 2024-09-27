@@ -5,7 +5,7 @@ from email.mime.multipart import MIMEMultipart
 
 
 # Importar a base de dados
-Tabela_Excel = pd.read_excel('Vendas.xlsx')
+Tabela_Excel = pd.read_excel('SuaTabela.xlsx')
 
 # Visualizar a base de dados, Faturamento das lojas e quantidade de produtos vendidos por cada loja
 a = Tabela_Excel[['ID Loja', 'Quantidade', 'Valor Final']].groupby('ID Loja').sum()
@@ -18,9 +18,9 @@ a['Ticket Médio'] = b
 tabela_html = a.to_html()
 
 # Configurações do e-mail
-gmail_user = 'pedrolucasgraciano.py@gmail.com'
-gmail_password = 'ogpo nasq tqur fnfm'
-destinatario = 'predograciano@gmail.com'
+gmail_user = 'SeuEmail@gmail.com'
+gmail_password = 'Sua senha de APP'
+destinatario = 'Destinatario@gmail.com'
 assunto = 'Faturamento de Setembro'
 
 # Corpo do e-mail com a tabela em HTML
